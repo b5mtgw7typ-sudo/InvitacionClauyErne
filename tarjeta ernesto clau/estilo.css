@@ -1,0 +1,405 @@
+body {
+
+    background-color: #f6efe5;
+
+    font-family: Georgia, serif;
+
+    color: #5b4a38;
+
+    text-align: center;
+
+    margin: 0;
+
+}
+
+
+/* PORTADA */
+
+.portada {
+
+    padding: 80px 20px;
+
+}
+
+
+
+.arriba {
+
+    font-style: italic;
+
+    font-size: 20px;
+
+    color: #806044;
+
+}
+
+
+
+h1 {
+
+    font-size: 55px;
+
+    font-weight: normal;
+
+    color: #6d8060;
+
+}
+
+
+
+h2 {
+
+    font-size: 32px;
+
+    font-weight: normal;
+
+    color: #806044;
+
+}
+
+
+
+.foto {
+
+    width: 320px;
+
+    height: 320px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 8px solid #fffaf2;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+
+}
+
+
+
+.fecha {
+
+    font-size: 26px;
+
+    margin-top:30px;
+
+}
+
+
+
+.lugar {
+
+    font-size:20px;
+
+    line-height:1.6;
+
+}
+
+
+
+
+
+/* SECCIONES */
+
+section {
+
+    padding:60px 30px;
+
+    max-width:700px;
+
+    margin:auto;
+
+}
+
+
+
+section p {
+
+    font-size:20px;
+
+    line-height:1.8;
+
+}
+
+
+
+
+
+/* BOTONES */
+
+.boton {
+
+    display:inline-block;
+
+    margin-top:25px;
+
+    padding:15px 35px;
+
+    background:#6d8060;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:40px;
+
+}
+
+
+
+
+
+/* CODIGO DE VESTIMENTA */
+
+.vestimenta {
+
+    background:#efe4d2;
+
+}
+
+
+
+
+
+/* GALERIA */
+
+.fotos {
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+
+
+.fotos img {
+
+    width:220px;
+
+    height:220px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+    border:5px solid #fffaf2;
+
+    box-shadow:0 8px 20px rgba(0,0,0,0.15);
+
+}
+
+
+
+
+
+/* SOBRE INICIAL */
+
+.sobre-inicial {
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:100%;
+
+    background:#f3eadb;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:999;
+
+}
+
+
+
+.sobre-papel {
+
+    width:320px;
+
+    height:200px;
+
+    background:#fff8ed;
+
+    border-radius:10px;
+
+    box-shadow:0 15px 30px rgba(0,0,0,0.15);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+
+
+.sello {
+
+    width:80px;
+
+    height:80px;
+
+    background:#8a6f4d;
+
+    color:white;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:22px;
+
+}
+
+
+
+.sobre-inicial p {
+
+    font-size:22px;
+
+    color:#6d5a43;
+
+}
+
+
+
+
+
+/* ANIMACIONES */
+
+.portada,
+section {
+
+    animation: aparecer 1.2s ease;
+
+}
+
+
+
+@keyframes aparecer {
+
+    from {
+
+        opacity:0;
+
+        transform:translateY(25px);
+
+    }
+
+
+    to {
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+.contador {
+
+    background:#efe4d2;
+
+}
+
+
+#cuenta-regresiva {
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+
+#cuenta-regresiva div {
+
+    background:#fff8ed;
+
+    padding:20px;
+
+    border-radius:15px;
+
+    width:90px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,0.1);
+
+}
+
+
+#cuenta-regresiva span {
+
+    font-size:35px;
+
+    color:#6d8060;
+
+}
+
+
+#cuenta-regresiva p {
+
+    font-size:16px;
+
+    margin:5px;
+
+}
+
+.sobre-inicial {
+
+transition: opacity 1s ease;
+
+}
+
+
+.sobre-papel {
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+
+.sobre-papel::before {
+
+content:"";
+
+position:absolute;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+height:50%;
+
+background:#eadbc4;
+
+clip-path:polygon(0 0,100% 0,50% 100%);
+
+}
